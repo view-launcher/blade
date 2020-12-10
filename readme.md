@@ -30,18 +30,7 @@ For example :
 LOCAL_VIEW_DIR=/Users/michael/Documents/htdocs/laravel/resources/views
 ```
 
-## Usage
-Use shortcuts to access all the functions.
-
-Here are the default shortcuts (These are configurable via config file).
-
-* `AA`  →  Inspect view
-* `D`  →  Open the view in your code editor
-
-## Configurations
-
-## Specify your Code Editor
-
+### 4. Specify your Code Editor
 By default, PhpStorm is set to the default code editor, you can change it by adding a new item `LOCAL_VIEW_DIR` in your `.env` file.
 
 For example:
@@ -57,6 +46,14 @@ Many editors like PHPStorm or TextMate has protocol handler support by default.
 If your favorite code editor doesn't have support for protocol handler, you must set up it by yourself.
 
 To do so, you might want to read [this article](https://tracy.nette.org/en/open-files-in-ide).
+
+## Usage
+Use shortcuts to access all the functions.
+
+Here are the default shortcuts (These are configurable via the config file).
+
+* `AA`  →  Inspect view
+* `D`  →  Open the view in your code editor
 
 ## Limitation
 Tags without new line won't get detected.
