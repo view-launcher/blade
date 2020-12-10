@@ -5,7 +5,7 @@ A Laravel package for inspecting and opening blade template in your code editor 
 ### 1. Install via composer :
 
 ```shell script
-composer require yaquawa/laravel-view-launcher
+composer require view-launcher/blade-view-launcher
 php artisan view:clear
 ```
 
@@ -30,7 +30,7 @@ For example :
 LOCAL_BASE_PATH=/Users/michael/Documents/htdocs/foobar/
 ```
 
-## How to Use
+## Usage
 Use shortcuts to access all the functions.
 
 Here are the default shortcuts (These are configurable via config file).
