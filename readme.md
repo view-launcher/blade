@@ -19,8 +19,8 @@ Put the `@viewLauncherAssets` into your `head` element. Be sure place `@viewLaun
 </head>
 ```
 
-### 3. Set your "local base path"
-If you are using Docker or Vagrant, to open your view file in your code editor correctly you must provide an absolute path to the view directory in your host machine.
+### 3. Set your "local view directory path"
+If you are using Docker or Vagrant, to open your view file in your code editor correctly you must provide an absolute path to the view directory in your ***host machine***.
 
 To do so, in your `.env` file, add a new item `LOCAL_VIEW_DIR`.
 
