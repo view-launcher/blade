@@ -5,7 +5,7 @@ A Laravel package for inspecting and opening blade template in your code editor 
 ### 1. Install via composer :
 
 ```shell script
-composer require view-launcher/blade-view-launcher
+composer require --dev view-launcher/blade-view-launcher
 php artisan view:clear
 ```
 
