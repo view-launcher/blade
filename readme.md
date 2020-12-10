@@ -20,14 +20,14 @@ Put the `@viewLauncherAssets` into your `head` element. Be sure place `@viewLaun
 ```
 
 ### 3. Set your "local base path"
-If you are using Docker or Vagrant, to open your view file in your code editor correctly you must provide an absolute path to the project directory in your host machine.
+If you are using Docker or Vagrant, to open your view file in your code editor correctly you must provide an absolute path to the view directory in your host machine.
 
-To do so, in your `.env` file, add a new item `LOCAL_BASE_PATH`.
+To do so, in your `.env` file, add a new item `LOCAL_VIEW_DIR`.
 
 For example :
 
 ```dotenv
-LOCAL_BASE_PATH=/Users/michael/Documents/htdocs/foobar/
+LOCAL_VIEW_DIR=/Users/michael/Documents/htdocs/laravel/resources/views
 ```
 
 ## Usage
@@ -41,16 +41,15 @@ Here are the default shortcuts (These are configurable via config file).
 ## Configurations
 
 ## Specify your Code Editor
-By default, you can choose between the following editors.
 
-* PhpStorm
-* Sublime
-* Visual Studio Code
-* Atom
-* Textmate
-* Emacs
-* MacVim
-* idea
+By default, PhpStorm is set to the default code editor, you can change it by adding a new item `LOCAL_VIEW_DIR` in your `.env` file.
+
+For example:
+```dotenv
+VIEW_LAUNCHER_EDITOR=vscode
+```
+
+See the list of supported editors at [here](https://github.com/view-launcher/view-launcher#supported-editors).
 
 To make it be able to open file in your editor from browsers directly, you have to set up a "protocol handler" first.
 Many editors like PHPStorm or TextMate has protocol handler support by default.
