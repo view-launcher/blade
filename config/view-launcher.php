@@ -28,8 +28,10 @@ return [
     'theme' => env('VIEW_LAUNCHER_THEME') ?? 'dark',
 
     'shortcuts' => [
-        'inspect' => 'a a',
         'open' => 'd',
+        'inspect' => 'a a',
+        'inspectParent' => 'e',
+        'inspectComponent' => 'c c',
     ],
 
     'route_prefix' => 'view-launcher',

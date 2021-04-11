@@ -8,21 +8,16 @@ class AssetRenderer
 {
     public function js(): string
     {
-        $views = array_map(function (View $view) {
-            return $view->getName();
-        }, ViewLauncher::$views);
-
         $config = app('config')['view-launcher'];
 
         $viewLauncherConfig = json_encode([
-            'views' => $views,
             'theme' => $config['theme'],
             'editor' => $config['editor'],
             'shortcuts' => $config['shortcuts'],
         ]);
 
-        return "<script>viewLauncher = {$viewLauncherConfig};</script>" .
-            "<script src=\"{$this->getPathFromRouteName('view-launcher.js')}\" defer></script>";
+        return "<script src=\"{$this->getPathFromRouteName('view-launcher.js')}\" defer></script>" .
+            "<script> document.addEventListener('DOMContentLoaded',function(){window['view-launcher'].viewLauncher({$viewLauncherConfig})})</script>";
     }
 
     public function css(): string

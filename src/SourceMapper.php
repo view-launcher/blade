@@ -50,14 +50,15 @@ class SourceMapper
                     return $line . "\n";
                 }
 
-                $location = htmlspecialchars(
+                $tagInfo = htmlspecialchars(
                     json_encode([
                         'view' => $this->filePath,
                         'line' => $this->getLineNumber($offset),
                     ])
                 );
+
                 $attributes = <<<EOT
- data-tag-location="$location"
+ data-tag-info="$tagInfo"
 EOT;
 
                 return substr_replace($line, $attributes, $this->isEmptyTag($line) ? -2 : -1, 0) . "\n";

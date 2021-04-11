@@ -5,7 +5,7 @@ A Laravel package for inspecting and opening blade template in your code editor 
 ### 1. Install via composer :
 
 ```shell script
-composer require --dev view-launcher/blade-view-launcher
+composer require --dev view-launcher/blade
 php artisan view:clear
 ```
 
@@ -52,8 +52,13 @@ Use shortcuts to access all the functions.
 
 Here are the default shortcuts (These are configurable via the config file).
 
-* `AA`  →  Inspect view
-* `D`  →  Open the view in your code editor
+| Key   | Action                                                   |
+|-------|----------------------------------------------------------|
+| `A A` | Toggle inspect mode                                      |
+| `C C` | Toggle inspect mode, but only inspect components         |
+| `D`   | Open with your editor(the default setting is VSCode)     |
+| `E`   | Inspect the parent element of current inspecting element |
+
 
 ## Limitation
 Tags without new line won't get detected.
