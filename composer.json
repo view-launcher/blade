@@ -1,5 +1,5 @@
 {
-    "name": "view-launcher/blade-view-launcher",
+    "name": "view-launcher/blade",
     "description": "A Laravel package for opening blade view/component in code editor from browsers.",
     "keywords": [
         "dev",
